@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhanuupriya Sekar — Software Development Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="site-bg" aria-hidden="true">
+    <div class="site-aurora"></div>
+    <canvas id="bg-canvas"></canvas>
+  </div>
+
+  <div id="progress"></div>
+
+  <nav>
+    <div class="wrap">
+      <a href="#top" class="nav-logo" aria-label="Home">
+        <span class="logo-mark">&lt;<span class="logo-initials">BS</span>/&gt;</span>
+      </a>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="#about" data-section="about">About</a></li>
+          <li><a href="#experience" data-section="experience">Experience</a></li>
+          <li><a href="#projects" data-section="projects">Projects</a></li>
+          <li><a href="#skills" data-section="skills">Skills</a></li>
+          <li><a href="#certifications" data-section="certifications">Certs</a></li>
+          <li><a href="#beyond" data-section="beyond">Beyond Code</a></li>
+          <li><a href="#contact" data-section="contact">Contact</a></li>
+          <span class="nav-indicator"></span>
+        </ul>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light and dark theme">🌙</button>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="wrap hero-content">
+      <h1 class="hero-name">Bhanuupriya Sekar</h1>
+      <div class="hero-role"><span id="role-text"></span><span class="cursor">&nbsp;</span></div>
+      <p class="hero-tagline">I build full-stack systems that actually ship — from a payments platform running in
+        production, to geospatial tools, to migrating legacy code into modern REST APIs. If it needs clean logic and a
+        bit of problem-solving, I'm in. 🚀</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View projects</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="stat-num" data-count="2.5" data-suffix="+">0</div>
+          <div class="stat-label">Years experience</div>
+        </div>
+        <div>
+          <div class="stat-num" data-count="3" data-suffix="">0</div>
+          <div class="stat-label">Roles held, 2 companies</div>
+        </div>
+        <div>
+          <div class="stat-num" data-count="5" data-suffix="+">0</div>
+          <div class="stat-label">Modules shipped</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head"><span class="section-num">01</span>
+        <h2 class="section-title">About 👋</h2>
+      </div>
+      <div class="about-text">
+        <p>💻 I'm a Software Development Engineer with 2.5+ years of experience building full-stack applications in
+          <strong>Java, Spring Boot, Angular, and PostgreSQL</strong>. At Aziro Technologies, I work on a vending
+          machine payments platform — debugging production issues, optimizing queries, and shipping new features across
+          multiple modules with Java Servlets and REST APIs.
+        </p>
+        <p>🌍 Before that, at Dhyan Networks, I worked across a range of modules — dynamic Angular grids and forms,
+          geospatial visualization tools like a network signal heatmap and boundary-drawing tools, and migrating legacy
+          Struts modules into modern REST APIs. I enjoy this mix of clean backend logic and data that actually needs to
+          be *seen* to be understood.
+        </p>
+        <p>🚧 On the side, I'm designing <strong>ReachSafe</strong>, a smart alarm and transit-tracking concept I've
+          pitched internally to my team — currently at the design stage, ahead of development. I pair with
+          <strong>GitHub Copilot</strong> in IntelliJ day to day to move faster through implementation.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap">
+      <div class="section-head"><span class="section-num">02</span>
+        <h2 class="section-title">Experience 💼</h2>
+      </div>
+
+      <div class="job">
+        <div class="job-period">Jan 2025 — Present</div>
+        <div>
+          <div class="job-role">Software Engineer – Development</div>
+          <div class="job-company">Aziro Technologies (formerly Msys Technologies)</div>
+          <div class="job-loc">Chennai, India</div>
+          <div class="job-desc">
+            <ul>
+              <li>Identified and resolved critical UI functionality and performance bugs, improving page load speed and
+                application stability</li>
+              <li>Debugged REST API response and data-consistency issues, reducing the production defect rate</li>
+              <li>Built new UI features and reusable components with Java Servlets, improving development velocity</li>
+              <li>Worked with PostgreSQL for efficient data handling, validation, and query optimization in production
+              </li>
+              <li>Collaborated with cross-functional teams in code reviews to enforce coding standards and maintain a
+                clean, scalable codebase.</li>
+              <li>Worked with PostgreSQL for efficient data handling, validation, and query optimization in a production
+                environment.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="job-period">Jul 2023 — Aug 2024</div>
+        <div>
+          <div class="job-role">Software Engineer Trainee</div>
+          <div class="job-company">Dhyan Networks and Technologies</div>
+          <div class="job-loc">Chennai, India</div>
+          <div class="job-desc">
+            <ul>
+              <li>Built dynamic Angular grids and complex forms using FormlyFieldConfig across 5+ modules</li>
+              <li>Developed an interactive geospatial heatmap with Leaflet-Heatmap to visualize network signal strength
+              </li>
+              <li>Integrated Leaflet-Draw for region boundary creation, enabling precise geofencing</li>
+              <li>Led migration of legacy Struts-based modules to RESTful APIs, and improving API response
+                times.</li>
+              <li>Designed and implemented advanced filter components for a Parking Management System, significantly
+                improving
+                data retrieval efficiency and user experience.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="job-period">Jan 2023 — Jun 2023</div>
+        <div>
+          <div class="job-role">Software Engineer Intern</div>
+          <div class="job-company">Dhyan Networks and Technologies</div>
+          <div class="job-loc">Chennai, India</div>
+          <div class="job-desc">
+            <ul>
+              <li>Developed full-stack modules with Java Servlets and HTML5/CSS3/JavaScript, contributing to 3+ live
+                features</li>
+              <li>Designed and optimized relational database schemas in MySQL and PostgreSQL</li>
+              <li>Diagnosed and resolved front-end and back-end bugs, improving application reliability and user
+                satisfaction.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-head"><span class="section-num">03</span>
+        <h2 class="section-title">Projects 🚀</h2>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card featured" data-tilt>
+          <div>
+            <span class="project-tag">Featured · Design phase</span>
+            <div class="project-name">ReachSafe</div>
+            <p class="project-desc">A smart alarm and transit-tracking concept that would wake commuters based on
+              real-time location instead of a fixed time — so you never oversleep past your stop. Currently in the
+              design and planning stage, ahead of development. Pitched internally to my team.</p>
+            <div class="project-stack">
+              <span class="chip">Personal project</span>
+              <span class="chip">Concept &amp; design</span>
+            </div>
+          </div>
+          <div class="project-visual">
+            <div class="pulse-dot"></div>
+            <span class="visual-label">sketching the architecture…</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-tilt>
+          <div class="project-name">Network Signal Heatmap</div>
+          <p class="project-desc">Interactive geospatial heatmap built with Leaflet-Heatmap to visualize network signal
+            strength across regions, giving operations teams an at-a-glance view of coverage gaps.</p>
+          <div class="project-stack">
+            <span class="chip">Angular</span>
+            <span class="chip">Leaflet.js</span>
+            <span class="chip">TypeScript</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-tilt>
+          <div class="project-name">Parking Management Filters</div>
+          <p class="project-desc">Advanced filter components for a Parking Management System that cut down data
+            retrieval time and made large, complex datasets easier to navigate.</p>
+          <div class="project-stack">
+            <span class="chip">Angular</span>
+            <span class="chip">FormlyFieldConfig</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <div class="section-head"><span class="section-num">04</span>
+        <h2 class="section-title">Skills ⚡</h2>
+      </div>
+      <div class="skills-grid">
+        <div>
+          <div class="skill-group-title">💻 Languages</div>
+          <div class="skill-list">
+            <span class="skill-pill">Java</span>
+            <span class="skill-pill">TypeScript</span>
+            <span class="skill-pill">JavaScript</span>
+            <span class="skill-pill">HTML5</span>
+            <span class="skill-pill">CSS3</span>
+          </div>
+        </div>
+        <div>
+          <div class="skill-group-title">⚙️ Backend &amp; frameworks</div>
+          <div class="skill-list">
+            <span class="skill-pill">Java Servlets</span>
+            <span class="skill-pill">RESTful APIs</span>
+            <span class="skill-pill">Spring Boot</span>
+            <span class="skill-pill">Hibernate</span>
+            <span class="skill-pill">Angular</span>
+            <span class="skill-pill">JDBC</span>
+          </div>
+        </div>
+        <div>
+          <div class="skill-group-title">🗄️ Data</div>
+          <div class="skill-list">
+            <span class="skill-pill">PostgreSQL</span>
+            <span class="skill-pill">MySQL</span>
+          </div>
+        </div>
+        <div>
+          <div class="skill-group-title">🛠️ Tools &amp; practices</div>
+          <div class="skill-list">
+            <span class="skill-pill">Git &amp; GitHub</span>
+            <span class="skill-pill">GitHub Copilot</span>
+            <span class="skill-pill">IntelliJ IDEA</span>
+            <span class="skill-pill">VS Code</span>
+            <span class="skill-pill">Agile / Scrum</span>
+            <span class="skill-pill">Code Review</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <div class="wrap">
+      <div class="section-head"><span class="section-num">05</span>
+        <h2 class="section-title">Certifications &amp; achievements 🏅</h2>
+      </div>
+      <div class="cert-list">
+        <div class="cert-item">
+          <div class="cert-icon">🎓</div>
+          <div>
+            <div class="cert-name">Front End &amp; Full Stack Development Bootcamp</div>
+            <div class="cert-meta">Coding Ninjas, in association with NSDC — Oct 2024 to Jan 2025</div>
+          </div>
+        </div>
+        <div class="cert-item">
+          <div class="cert-icon">🗣️</div>
+          <div>
+            <div class="cert-name">Soft Skills Training Program for Industry Placement</div>
+            <div class="cert-meta">Hablar, in association with Coding Ninjas — Feb 2026</div>
+          </div>
+        </div>
+        <div class="cert-item">
+          <div class="cert-icon">🏆</div>
+          <div>
+            <div class="cert-name">Rockstar Rookie Award</div>
+            <div class="cert-meta">Aziro Technologies — April 2026</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="wrap">
+      <div class="section-head"><span class="section-num">06</span>
+        <h2 class="section-title">Education 🎓</h2>
+      </div>
+      <div class="edu-item">
+        <div class="edu-degree">B.E., Electronics and Communication Engineering</div>
+        <div class="edu-meta">AVS Engineering College, Salem — 2023 · CGPA 87.9%</div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-degree">Higher Secondary Certificate (Class XII)</div>
+        <div class="edu-meta">SRV Girls Higher Secondary School, Rasipuram, Namakkal — 2019 · 84.3%</div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-degree">Secondary School Leaving Certificate (Class X)</div>
+        <div class="edu-meta">Government Girls Higher Secondary School, Salem — 2017 · 95%</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="beyond">
+    <div class="wrap">
+      <div class="section-head"><span class="section-num">07</span>
+        <h2 class="section-title">Beyond the Code 🎯</h2>
+      </div>
+      <div class="beyond-grid">
+        <div class="beyond-card">
+          <div class="beyond-icon">♟️</div>
+          <div class="beyond-title">Chess</div>
+          <div class="beyond-desc">State-level chess champion. I still can't resist a good match when someone
+            challenges me.</div>
+        </div>
+        <div class="beyond-card">
+          <div class="beyond-icon">🏋️</div>
+          <div class="beyond-title">Fitness</div>
+          <div class="beyond-desc">Gym, every single day. Heavy weights, slow progress, zero regrets.</div>
+        </div>
+        <div class="beyond-card">
+          <div class="beyond-icon">🍜</div>
+          <div class="beyond-title">Food</div>
+          <div class="beyond-desc">My taste buds don't believe in comfort zones — always hunting down the next
+            cuisine to try.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="section-head"><span class="section-num">08</span>
+        <h2 class="section-title">Contact 📬</h2>
+      </div>
+      <div class="contact-inner">
+        <p style="color:var(--text-dim); font-size:0.95rem;">Have a role or project you think I'd be a fit for? Send a
+          note.</p>
+        <form id="contact-form" action="https://formspree.io/f/mbgjkelr" method="POST">
+          <div class="field" style="margin-bottom:16px;">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="field" style="margin-bottom:16px;">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="field" style="margin-bottom:16px;">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <div id="form-success">Message captured — this form isn't wired to an inbox yet. Connect it to something like
+            Formspree, or I can help set that up.</div>
+        </form>
+        <div class="contact-links">
+          <span class="contact-email">
+            <a href="mailto:bhanuupriyasekar@gmail.com">bhanuupriyasekar@gmail.com</a>
+            <button type="button" class="copy-btn" id="copy-email"
+              data-email="bhanuupriyasekar@gmail.com" aria-label="Copy email address" title="Copy email address">
+              <svg class="icon-copy" viewBox="0 0 24 24" width="15" height="15" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <rect x="9" y="9" width="11" height="11" rx="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <svg class="icon-check" viewBox="0 0 24 24" width="15" height="15" fill="none"
+                stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <path d="M20 6 9 17l-5-5"></path>
+              </svg>
+            </button>
+            <span class="copy-hint" id="copy-hint" role="status" aria-live="polite"></span>
+          </span>
+          <a href="tel:+916380975455">+91 6380975455</a>
+          <a href="https://linkedin.com/in/bhanuupriyas" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/BhanuupriyaSekar" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>&copy; <span id="year"></span> Bhanuupriya Sekar</footer>
+
+  <script>
+    document.documentElement.classList.remove('no-js');
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    /* ---------- Scroll progress bar ---------- */
+    const progressBar = document.getElementById('progress');
+    function updateProgress() {
+      const h = document.documentElement;
+      const scrolled = (h.scrollTop) / (h.scrollHeight - h.clientHeight) * 100;
+      progressBar.style.width = scrolled + '%';
+    }
+    document.addEventListener('scroll', updateProgress, { passive: true });
+    updateProgress();
+
+    /* ---------- Scrollspy nav + sliding indicator ---------- */
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const navIndicator = document.querySelector('.nav-indicator');
+    const navLinksList = document.querySelector('.nav-links');
+    const sections = document.querySelectorAll('section[id]');
+
+    function moveIndicator(link) {
+      if (!link || window.innerWidth <= 640) return;
+      const linkRect = link.getBoundingClientRect();
+      const listRect = navLinksList.getBoundingClientRect();
+      const cs = getComputedStyle(link);
+      const padL = parseFloat(cs.paddingLeft) || 0;
+      const padR = parseFloat(cs.paddingRight) || 0;
+      navIndicator.style.left = (linkRect.left - listRect.left + padL) + 'px';
+      navIndicator.style.width = (linkRect.width - padL - padR) + 'px';
+    }
+
+    const spyObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(l => l.classList.remove('active'));
+          const active = document.querySelector('.nav-links a[data-section="' + entry.target.id + '"]');
+          if (active) { active.classList.add('active'); moveIndicator(active); }
+        }
+      });
+    }, { rootMargin: '-40% 0px -50% 0px' });
+    sections.forEach(s => spyObserver.observe(s));
+    setTimeout(() => moveIndicator(document.querySelector('.nav-links a.active') || navLinks[0]), 100);
+
+    window.addEventListener('resize', () => {
+      moveIndicator(document.querySelector('.nav-links a.active'));
+    });
+
+    /* ---------- Section entrance animations ---------- */
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    sections.forEach(s => revealObserver.observe(s));
+
+    /* ---------- Mobile menu ---------- */
+    const navToggle = document.getElementById('nav-toggle');
+    navToggle.addEventListener('click', () => {
+      const isOpen = navLinksList.classList.toggle('open');
+      navToggle.classList.toggle('open', isOpen);
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+    navLinks.forEach(a => a.addEventListener('click', () => {
+      navLinksList.classList.remove('open');
+      navToggle.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    }));
+
+    /* ---------- Theme toggle ---------- */
+    const themeToggle = document.getElementById('theme-toggle');
+    let currentTheme = 'dark';
+    themeToggle.addEventListener('click', () => {
+      currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', currentTheme);
+      themeToggle.textContent = currentTheme === 'dark' ? '🌙' : '☀️';
+      readParticleStyle();
+      if (reduceMotion) drawParticles();
+      setTimeout(() => moveIndicator(document.querySelector('.nav-links a.active')), 50);
+    });
+
+    /* ---------- Hero role typing effect ---------- */
+    const roles = ['Software Development Engineer', 'Java & Spring Boot', 'Full-Stack Problem Solver'];
+    const roleEl = document.getElementById('role-text');
+    let roleIdx = 0, charIdx = 0, deleting = false;
+
+    function typeLoop() {
+      const current = roles[roleIdx];
+      if (!deleting) {
+        charIdx++;
+        roleEl.textContent = current.slice(0, charIdx);
+        if (charIdx === current.length) {
+          deleting = true;
+          setTimeout(typeLoop, 1600);
+          return;
+        }
+      } else {
+        charIdx--;
+        roleEl.textContent = current.slice(0, charIdx);
+        if (charIdx === 0) {
+          deleting = false;
+          roleIdx = (roleIdx + 1) % roles.length;
+        }
+      }
+      setTimeout(typeLoop, deleting ? 35 : 55);
+    }
+    if (reduceMotion) {
+      roleEl.textContent = roles[0];
+    } else {
+      typeLoop();
+    }
+
+    /* ---------- Stat count-up (triggers once on scroll into view) ---------- */
+    const statObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const target = parseFloat(el.dataset.count);
+          const suffix = el.dataset.suffix || '';
+          const isDecimal = target % 1 !== 0;
+          let start = null;
+          const duration = 1000;
+          function step(ts) {
+            if (!start) start = ts;
+            const progress = Math.min((ts - start) / duration, 1);
+            const val = target * progress;
+            el.textContent = (isDecimal ? val.toFixed(1) : Math.floor(val)) + suffix;
+            if (progress < 1) requestAnimationFrame(step);
+            else el.textContent = (isDecimal ? target.toFixed(1) : target) + suffix;
+          }
+          requestAnimationFrame(step);
+          statObserver.unobserve(el);
+        }
+      });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('.stat-num').forEach(el => statObserver.observe(el));
+
+    /* ---------- Project card tilt on mouse move ---------- */
+    if (!reduceMotion) {
+      document.querySelectorAll('[data-tilt]').forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+          const rect = card.getBoundingClientRect();
+          const x = (e.clientX - rect.left) / rect.width - 0.5;
+          const y = (e.clientY - rect.top) / rect.height - 0.5;
+          card.style.transform = 'perspective(800px) rotateY(' + (x * 4) + 'deg) rotateX(' + (-y * 4) + 'deg) translateY(-2px)';
+        });
+        card.addEventListener('mouseleave', () => {
+          card.style.transform = 'perspective(800px) rotateY(0) rotateX(0)';
+        });
+      });
+    }
+
+    /* ---------- Copy email to clipboard ---------- */
+    const copyBtn = document.getElementById('copy-email');
+    const copyHint = document.getElementById('copy-hint');
+    const emailLink = document.querySelector('.contact-email a');
+    let copyResetTimer;
+
+    function selectEmailText() {
+      const range = document.createRange();
+      range.selectNodeContents(emailLink);
+      const sel = window.getSelection();
+      sel.removeAllRanges();
+      sel.addRange(range);
+    }
+
+    copyBtn.addEventListener('click', async () => {
+      const email = copyBtn.dataset.email;
+      let ok = false;
+
+      try {
+        await navigator.clipboard.writeText(email);
+        ok = true;
+      } catch (err) {
+        const tmp = document.createElement('textarea');
+        tmp.value = email;
+        tmp.setAttribute('readonly', '');
+        tmp.style.position = 'fixed';
+        tmp.style.top = '0';
+        tmp.style.opacity = '0';
+        document.body.appendChild(tmp);
+        tmp.select();
+        try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+        document.body.removeChild(tmp);
+      }
+
+      if (!ok) selectEmailText();
+      copyBtn.classList.toggle('copied', ok);
+      copyBtn.setAttribute('aria-label', ok ? 'Email address copied' : 'Copy email address');
+      copyHint.textContent = ok ? 'Copied!' : 'Press Ctrl+C';
+
+      clearTimeout(copyResetTimer);
+      copyResetTimer = setTimeout(() => {
+        copyBtn.classList.remove('copied');
+        copyBtn.setAttribute('aria-label', 'Copy email address');
+        copyHint.textContent = '';
+      }, ok ? 1800 : 3000);
+    });
+
+    /* ---------- Contact form fake-submit ---------- */
+    document.getElementById('contact-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const form = this;
+      const successEl = document.getElementById('form-success');
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalLabel = submitBtn.textContent;
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending…';
+
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      }).then(response => {
+        if (response.ok) {
+          successEl.textContent = "Thanks — your message is on its way. I'll get back to you soon.";
+          successEl.style.display = 'block';
+          form.reset();
+        } else {
+          successEl.textContent = "Something went wrong sending that. Try again, or email me directly.";
+          successEl.style.display = 'block';
+        }
+      }).catch(() => {
+        successEl.textContent = "Something went wrong sending that. Try again, or email me directly.";
+        successEl.style.display = 'block';
+      }).finally(() => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalLabel;
+      });
+    });
+
+    /* ---------- Full-page canvas: connected particle network ---------- */
+    const canvas = document.getElementById('bg-canvas');
+    const ctx = canvas.getContext('2d');
+    let particles = [];
+    let mouse = { x: null, y: null };
+    let viewW = window.innerWidth, viewH = window.innerHeight;
+    let particleStyle = { line: '79, 209, 197', dot: '91, 157, 217', lineAlpha: 0.18, dotAlpha: 0.6, dotSize: 1.6 };
+
+    function readParticleStyle() {
+      const cs = getComputedStyle(document.documentElement);
+      const read = (name, fallback) => (cs.getPropertyValue(name).trim() || fallback);
+      particleStyle = {
+        line: read('--particle-line', '79, 209, 197'),
+        dot: read('--particle-dot', '91, 157, 217'),
+        lineAlpha: parseFloat(read('--particle-line-alpha', '0.18')),
+        dotAlpha: parseFloat(read('--particle-dot-alpha', '0.6')),
+        dotSize: parseFloat(read('--particle-dot-size', '1.6'))
+      };
+    }
+
+    function resizeCanvas() {
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      viewW = window.innerWidth;
+      viewH = window.innerHeight;
+      canvas.width = Math.floor(viewW * dpr);
+      canvas.height = Math.floor(viewH * dpr);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+    function initParticles() {
+      const count = Math.max(30, Math.min(110, Math.round((viewW * viewH) / 16000)));
+      particles = Array.from({ length: count }, () => ({
+        x: Math.random() * viewW,
+        y: Math.random() * viewH,
+        vx: (Math.random() - 0.5) * 0.35,
+        vy: (Math.random() - 0.5) * 0.35
+      }));
+    }
+    function drawParticles() {
+      ctx.clearRect(0, 0, viewW, viewH);
+      particles.forEach(p => {
+        p.x += p.vx; p.y += p.vy;
+        if (p.x < 0 || p.x > viewW) p.vx *= -1;
+        if (p.y < 0 || p.y > viewH) p.vy *= -1;
+        if (mouse.x !== null) {
+          const dx = p.x - mouse.x, dy = p.y - mouse.y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < 90) {
+            p.x += dx / dist * 0.6;
+            p.y += dy / dist * 0.6;
+          }
+        }
+      });
+      for (let i = 0; i < particles.length; i++) {
+        for (let j = i + 1; j < particles.length; j++) {
+          const dx = particles[i].x - particles[j].x;
+          const dy = particles[i].y - particles[j].y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < 130) {
+            ctx.strokeStyle = 'rgba(' + particleStyle.line + ',' + (particleStyle.lineAlpha * (1 - dist / 130)) + ')';
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(particles[i].x, particles[i].y);
+            ctx.lineTo(particles[j].x, particles[j].y);
+            ctx.stroke();
+          }
+        }
+        ctx.fillStyle = 'rgba(' + particleStyle.dot + ',' + particleStyle.dotAlpha + ')';
+        ctx.beginPath();
+        ctx.arc(particles[i].x, particles[i].y, particleStyle.dotSize, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    }
+    let animId = null;
+    function animate() {
+      drawParticles();
+      animId = requestAnimationFrame(animate);
+    }
+    resizeCanvas();
+    readParticleStyle();
+    initParticles();
+    if (!reduceMotion) {
+      animate();
+      window.addEventListener('mousemove', (e) => {
+        mouse.x = e.clientX;
+        mouse.y = e.clientY;
+      });
+      window.addEventListener('mouseout', () => { mouse.x = null; mouse.y = null; });
+      let resizeTimer;
+      window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => { resizeCanvas(); initParticles(); }, 150);
+      });
+      document.addEventListener('visibilitychange', () => {
+        if (document.hidden) {
+          if (animId !== null) { cancelAnimationFrame(animId); animId = null; }
+        } else if (animId === null) {
+          animate();
+        }
+      });
+    } else {
+      drawParticles();
+    }
+  </script>
+
+</body>
+
+</html>
